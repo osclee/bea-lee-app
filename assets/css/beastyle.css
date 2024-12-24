@@ -1,0 +1,138 @@
+:root {
+    --background: #2E294E;
+    --title: #D90368;
+    --text: #F1E9DA;
+    --link: #FFD400;
+    --subtitle: #2E294E;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+h1 {
+    color: var(--title);
+    text-shadow: 0 0 2px var(--title), 0 0 5px var(--title);
+}
+
+h2 {
+    color: var(--title);
+    text-shadow: 0 0 1px var(--title), 0 0 3px var(--title);
+}
+
+h3 {
+    color: var(--title);
+    text-shadow: 0 0 1px var(--title), 0 0 2px var(--title);
+}
+
+h4 {
+    color: var(--title);
+    font-weight: 600;
+}
+
+h5 {
+    color: var(--text);
+    text-shadow: 0 0 1px var(--text), 0 0 2px var(--text);
+}
+
+p,
+ul,
+li {
+    color: var(--text)
+}
+
+button {
+    background-color: var(--link);
+    color: var(--background);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    font-size: 14pt;
+    filter: drop-shadow(0 0 .2rem var(--link));
+}
+
+button:hover {
+    filter: drop-shadow(0 0 1rem var(--link));
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+    filter: blur(1rem);
+}
+
+.content-div {
+    margin-top: 1em;
+    padding-left: .6em;
+    padding-right: .6em;
+
+}
+
+.active-link {
+    color: var(--link);
+    text-shadow: 0 0 1px var(--link), 0 0 3px var(--link);
+    font-weight: bold;
+}
+
+.inactive-header-link {
+    color: var(--title);
+    text-decoration: none;
+}
+
+.inactive-header-link:visited {
+    color: var(--title);
+    text-decoration: none;
+}
+
+.inactive-header-link:hover {
+    text-shadow: 0 0 1px var(--title), 0 0 8px var(--title);
+}
+
+.inactive-link {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.inactive-link:visited {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.inactive-link:hover {
+    text-shadow: 0 0 1px var(--link), 0 0 3px var(--link);
+}
+
+.horizontal-line {
+    border: 1px solid var(--subtitle);
+}
+
+.date {
+    margin-top: 0;
+    font-weight: 400;
+    color: var(--subtitle)
+}
+
+.center-div {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.number {
+    text-shadow: 0 0 1px var(--link), 0 0 3px var(--text);
+}
