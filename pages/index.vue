@@ -14,6 +14,8 @@
 
         <img src="../assets/images/shrek.png" alt="Mike" width="25%" height="25%">
         <!--Use percents in order to scale when browser moves-->
+        <img src="../assets/images/Sponge.png" alt="Mike" width="25%" height="25%">
+        <!--Use percents in order to scale when browser moves-->
 
     </div>
 </template>
