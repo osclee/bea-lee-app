@@ -18,6 +18,10 @@ const isActive = () => {
                         <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/about">About
                         </NuxtLink>
                     </li>
+                    <li>
+                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/books">Books
+                        </NuxtLink>
+                    </li>
                 </ul>
             </nav>
         </div>
