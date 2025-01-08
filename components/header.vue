@@ -1,9 +1,3 @@
-<script setup>
-const isActive = () => {
-    return false;
-};
-</script>
-
 <template>
     <div>
         <h1 class="title">Bea Lee</h1>
@@ -11,15 +5,15 @@ const isActive = () => {
             <nav>
                 <ul>
                     <li>
-                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/">Home
+                        <NuxtLink active-class="active-link" class="inactive-link" to="/">Home
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/about">About
+                        <NuxtLink active-class="active-link" class="inactive-link" to="/about">About
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/books">Books
+                        <NuxtLink active-class="active-link" class="inactive-link" to="/books">Books
                         </NuxtLink>
                     </li>
                 </ul>
