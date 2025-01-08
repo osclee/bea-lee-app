@@ -1,7 +1,7 @@
 <template>
     <div class="content-div">
-        <h2>Hi Oscar!!</h2>
-        <h3>Here is a h3</h3>
+        <h2>Beatrice Katherine Lee</h2>
+        <h3>Master of Science in Quantitative and Compuational Finance Candidate</h3>
         <h4>Here is a h4</h4>
         <h5>Here is a h5</h5>
 
@@ -12,9 +12,9 @@
 
         <p>You can add a picture too...</p>
 
-        <img src="../assets/images/Headshot.png" alt="Mike" width="25%" height="25%">
+        <img src="../assets/images/Headshot.png" alt="Headshot" width="25%" height="25%">
         <!--Use percents in order to scale when browser moves-->
-        <img src="../assets/images/Sponge.png" alt="Mike" width="25%" height="25%">
+        <img src="../assets/images/Grad Pic with Fam.jpg" alt="GPWF" width="25%" height="25%">
         <!--Use percents in order to scale when browser moves-->
 
     </div>
