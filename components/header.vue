@@ -33,17 +33,21 @@ const isActive = () => {
 .title {
     padding-left: .3em;
     margin-top: 1em;
+    text-align: center;
 }
 
 .header nav {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
 }
 
 .header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: inline-block;
+    display: flex;
+    gap: 1em;
 }
 
 .header nav li {
