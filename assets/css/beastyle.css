@@ -20,26 +20,26 @@ h7 {
 
 h1 {
     text-transform: uppercase;
-   background-image: linear-gradient(
-     -225deg,
-     #231557 0%,
-     #44107a 29%,
-     #ff1361 67%,
-     #fff800 100%
-   );
-   background-size: auto auto;
-   background-clip: border-box;
-   background-size: 200% auto;
-   color: #fff;
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   animation: textclip 2s linear infinite;
-   display: inline-block;
-       font-size: 100px;
-    }
-    
-    @keyframes textclip {
+    background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 100px;
+}
+
+@keyframes textclip {
     to {
         background-position: 200% center;
     }
@@ -68,7 +68,7 @@ h5 {
 p,
 ul,
 li {
-    color: var(--text)
+    color: var(--text);
 }
 
 button {
@@ -104,7 +104,6 @@ button:hover {
     margin-top: 1em;
     padding-left: .6em;
     padding-right: .6em;
-
 }
 
 .active-link {
@@ -148,7 +147,7 @@ button:hover {
 .date {
     margin-top: 0;
     font-weight: 400;
-    color: var(--subtitle)
+    color: var(--subtitle);
 }
 
 .center-div {
@@ -166,7 +165,7 @@ button:hover {
 
 .profile-img {
     margin-right: 40px; /* Add spacing between image and text */
-    margin-left: 40px; 
+    margin-left: 40px;
     width: 20%;
     height: auto; /* Maintain aspect ratio */
 }
@@ -180,4 +179,29 @@ button:hover {
     padding: 20px; /* Add padding for spacing inside the section */
     border-radius: 10px; /* Optional: Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for better visual separation */
+}
+
+/* Resume Section Styles */
+.content-div iframe {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ccc; /* Optional border for the iframe */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.content-div a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.content-div a:hover {
+    background-color: #007bff; /* Hover background */
+    color: #fff; /* Hover text color */
 }
