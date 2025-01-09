@@ -19,6 +19,10 @@ const isActive = () => {
                         </NuxtLink>
                     </li>
                     <li>
+                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/resume">Resume
+                        </NuxtLink>
+                    </li>
+                    <li>
                         <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/books">Books
                         </NuxtLink>
                     </li>
