@@ -1,3 +1,16 @@
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  const script = document.createElement('script')
+  script.src = "https://www.goodreads.com/review/grid_widget/173710420.Beatrice's%20bookshelf:%20read?cover_size=small&hide_link=&hide_title=&num_books=56&order=d&shelf=read&sort=date_read&widget_id=1747408117"
+  script.type = "text/javascript"
+  script.async = true
+  document.getElementById("gr_grid_widget_1747408117")?.appendChild(script)
+})
+</script>
+
+
 <template>
     <div class="home">
         <!-- Header Section -->
@@ -42,6 +55,16 @@
                 <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
                 <li><a href="mailto:your-email@example.com">Email</a></li>
             </ul>
+        </section>
+
+        <section class="bookshelf">
+            <h2>
+                <a style="text-decoration: none;" rel="nofollow"
+                href="https://www.goodreads.com/review/list/173710420-beatrice-lee?shelf=read&utm_medium=api&utm_source=grid_widget">
+                Books I’ve Read
+                </a>
+            </h2>
+            <div id="gr_grid_widget_1747408117" class="gr_grid_container"></div>
         </section>
     </div>
 </template>
