@@ -1,21 +1,22 @@
 :root {
-    --background: #E2B4BD;
-    --title: #9B6A6C;
-    --text: #F1E9DA;
-    --link: #84A07C;
+    --background1: #44104A;
+    --background2: #F5F0DE;
+    --title: #CE0F7E;
+    --text1: #F5F0DE;
+    --text2: #231557;
+    --link1: #CE0F7E;   
+    --link2: #fff800;
     --subtitle: #424B54;
+    --subtitle2: #f5F0DE;
+    --subtitle4: #EC664E;
+    --subtitle3: #C9C6BA;
 }
 
 body {
-    background-color: var(--background);
-    font-family: "Source Code Pro", monospace;
+    background-color: var(--background1);
+    font-family: "Calibri", "Helvetica", "Arial", sans-serif;
     font-weight: 300;
-    font-size: 14pt;
-}
-
-h7 {
-    color: var(--title);
-    text-shadow: 0 0 2px var(--subtitle), 0 0 5px var(--subtitle);
+    font-size: 15pt;
 }
 
 h1 {
@@ -46,13 +47,14 @@ h1 {
 }
 
 h2 {
-    color: var(--title);
-    text-shadow: 0 0 1px var(--title), 0 0 3px var(--title);
+    font-size: 40px;
+    color: var(--title); 
+    /*text-shadow: 0 0 1px var(--title), 0 0 3px var(--title); */
 }
 
 h3 {
-    color: var(--title);
-    text-shadow: 0 0 1px var(--title), 0 0 2px var(--title);
+    color: var(--text2);
+    /*text-shadow: 0 0 1px var(--title), 0 0 2px var(--title);*/
 }
 
 h4 {
@@ -61,18 +63,26 @@ h4 {
 }
 
 h5 {
-    color: var(--text);
-    text-shadow: 0 0 1px var(--text), 0 0 2px var(--text);
+    color: var(--text1);
+    text-shadow: 0 0 1px var(--text1), 0 0 2px var(--text1);
+}
+
+h7 {
+    color: var(--title);
+    text-shadow: 0 0 2px var(--subtitle), 0 0 5px var(--subtitle);
+}
+
+p2, ul2, li {
+    color: var(--text2)
 }
 
 p,
-ul,
-li {
-    color: var(--text);
+ul{
+    color: var(--text1);
 }
 
 button {
-    background-color: var(--link);
+    background-color: var(--link1);
     color: var(--background);
     padding: 10px 20px;
     border: none;
@@ -82,11 +92,11 @@ button {
     font-family: "Source Code Pro", monospace;
     font-weight: 300;
     font-size: 14pt;
-    filter: drop-shadow(0 0 .2rem var(--link));
+    filter: drop-shadow(0 0 .2rem var(--link1));
 }
 
 button:hover {
-    filter: drop-shadow(0 0 1rem var(--link));
+    filter: drop-shadow(0 0 1rem var(--link1));
 }
 
 .page-enter-active,
@@ -107,8 +117,8 @@ button:hover {
 }
 
 .active-link {
-    color: var(--link);
-    text-shadow: 0 0 1px var(--link), 0 0 3px var(--link);
+    color: var(--link1);
+    text-shadow: 0 0 1px var(--link1), 0 0 3px var(--link1);
     font-weight: bold;
 }
 
@@ -127,17 +137,17 @@ button:hover {
 }
 
 .inactive-link {
-    color: var(--link);
+    color: var(--link1);
     text-decoration: none;
 }
 
 .inactive-link:visited {
-    color: var(--link);
+    color: var(--link1);
     text-decoration: none;
 }
 
 .inactive-link:hover {
-    text-shadow: 0 0 1px var(--link), 0 0 3px var(--link);
+    text-shadow: 0 0 1px var(--link1), 0 0 3px var(--link1);
 }
 
 .horizontal-line {
@@ -154,13 +164,11 @@ button:hover {
     margin-top: 2em;
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
 }
 
 .number {
-    text-shadow: 0 0 1px var(--link), 0 0 3px var(--text);
+    text-shadow: 0 0 1px var(--link1), 0 0 3px var(--text);
 }
 
 .profile-img {
@@ -175,7 +183,7 @@ button:hover {
     align-items: center;
     margin-top: 40px; /* Adds space above the section */
     margin-bottom: 20px;
-    background-color: var(--link); /* Light gray background color */
+    background-color: var(--subtitle2);
     padding: 20px; /* Add padding for spacing inside the section */
     border-radius: 10px; /* Optional: Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for better visual separation */
@@ -193,16 +201,16 @@ button:hover {
     display: inline-block;
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #007bff; /* Link color */
+    color: var(--link1); /* Link color */
     text-decoration: none;
     padding: 10px 20px;
-    border: 2px solid #007bff;
+    border: 2px solid var(--link1); /* Border color */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .content-div a:hover {
-    background-color: #007bff; /* Hover background */
+    background-color: var(--link1); /* Hover background */
     color: #fff; /* Hover text color */
 }
 
@@ -215,9 +223,9 @@ button:hover {
   }
   
   .gr_grid_book_container {
-    width: 50px;
-    height: auto;
-    overflow: hidden;
+    width: 40px;
+    height: 60px;
+    overflow: hidden;   
   }
   
   .gr_grid_book_container img {

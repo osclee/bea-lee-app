@@ -6,7 +6,7 @@ const isActive = () => {
 
 <template>
     <div>
-        <h1 class="title">Bea Lee</h1>
+        <h1 class="title">Beatrice (Bea) Lee</h1>
         <div class="header">
             <nav>
                 <ul>
@@ -15,15 +15,15 @@ const isActive = () => {
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/about">About
-                        </NuxtLink>
-                    </li>
-                    <li>
                         <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/resume">Resume
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/books">Books
+                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/projects">Projects
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink active-class="active-link" :class="{ 'inactive-link': !isActive() }" to="/more">More
                         </NuxtLink>
                     </li>
                 </ul>
