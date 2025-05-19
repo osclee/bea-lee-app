@@ -33,38 +33,25 @@ onMounted(() => {
                         <li>Quantitative Finance</li>
                     </ul2>
                 </section>
+                <section class="contact">
+            <h2>Get in Touch</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/beatrice-k-lee444" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:blee444@gatech.edu">Email</a></li>
+            </ul>
+            </section>
             </div>
+            
         </div>
-        
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>Notable Projects</h2>
-            <div class="project-card">
-                <h3>Financial Modeling for Investment Strategies</h3>
-                <p>A quantitative analysis project using Python and machine learning techniques to model optimal investment portfolios.</p>
-                <a href="https://github.com/your-project-link" target="_blank">View on GitHub</a>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
 
         <!-- Contact Section -->
         <section class="contact">
             <h2>Get in Touch</h2>
-            <p>Feel free to reach out if you're interested in collaborating or discussing finance, data science, or technology.</p>
             <ul>
                 <li><a href="https://www.linkedin.com/in/beatrice-k-lee444" target="_blank">LinkedIn</a></li>
                 <li><a href="mailto:blee444@gatech.edu">Email</a></li>
             </ul>
         </section>
 
-        <section class="bookshelf">
-            <h2>
-                <a style="text-decoration: none;" rel="nofollow"
-                href="https://www.goodreads.com/review/list/173710420-beatrice-lee?shelf=read&utm_medium=api&utm_source=grid_widget">
-                What I’m Reading
-                </a>
-            </h2>
-            <div id="gr_grid_widget_1747668306" class="gr_grid_container"></div>
-        </section>
     </div>
 </template>

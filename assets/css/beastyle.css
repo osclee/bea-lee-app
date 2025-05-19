@@ -57,21 +57,6 @@ h3 {
     /*text-shadow: 0 0 1px var(--title), 0 0 2px var(--title);*/
 }
 
-h4 {
-    color: var(--title);
-    font-weight: 600;
-}
-
-h5 {
-    color: var(--text1);
-    text-shadow: 0 0 1px var(--text1), 0 0 2px var(--text1);
-}
-
-h7 {
-    color: var(--title);
-    text-shadow: 0 0 2px var(--subtitle), 0 0 5px var(--subtitle);
-}
-
 p2, ul2, li {
     color: var(--text2)
 }
@@ -193,7 +178,7 @@ button:hover {
 .content-div iframe {
     display: block;
     margin: 0 auto;
-    border: 2px solid #ccc; /* Optional border for the iframe */
+    border: 2px solid var(--background2); /* Optional border for the iframe */
     border-radius: 8px; /* Rounded corners */
 }
 
@@ -211,9 +196,10 @@ button:hover {
 
 .content-div a:hover {
     background-color: var(--link1); /* Hover background */
-    color: #fff; /* Hover text color */
+    color: var(--text1); /* Hover text color */
 }
 
+/*Bookshelf styles*/
 .gr_grid_container {
     display: flex;
     flex-wrap: wrap;
